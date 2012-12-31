@@ -1,4 +1,4 @@
-class PixivMachine::Member < PixivMachine::Base
+class PixivMachine::IllustPage < PixivMachine::Page
   attr_reader :id
 
   def initialize(id, agent)

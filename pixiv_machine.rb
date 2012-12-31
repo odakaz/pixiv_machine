@@ -3,18 +3,15 @@ require 'rubygems'
 require 'mechanize'
 require 'logger'
 
-module PixivMachine
-  module URLConstants
-    ROOT = "http://www.pixiv.net"
+class PixivMachine
+  attr_reader :my_page
 
-    INDEX_PAGE = "index.php"
-    INDEX = "#{ROOT}/#{INDEX_PAGE}"
+  def initialize(id, password)
+    @id = id
+    @password = password
+    @agent = Mechanize.new
 
-    LOGIN_PAGE = "login.php"
-
-    BOOKMARK_PAGE = "bookmark.php"
-    BOOKMARK = "#{ROOT}/#{BOOKMARK_PAGE}"
-    USER_BOOKMARK = "#{BOOKMARK}?type=user"
+    @my_page = MyPage.new(id, password, @agent)
   end
 end
 
@@ -24,6 +21,9 @@ end
 class PixivMachine::LoginError < PixivMachine::PixivError
 end
 
-require File.expand_path('./pixiv_machine/base')
-require File.expand_path('./pixiv_machine/main')
-require File.expand_path('./pixiv_machine/member')
+require File.expand_path('./pixiv_machine/url')
+require File.expand_path('./pixiv_machine/page')
+require File.expand_path('./pixiv_machine/pageable_page')
+require File.expand_path('./pixiv_machine/my_page')
+require File.expand_path('./pixiv_machine/user_page')
+require File.expand_path('./pixiv_machine/illust_page')
