@@ -5,6 +5,7 @@ module PixivMachine::URL
   INDEX = "#{ROOT}/#{INDEX_PAGE}"
 
   LOGIN_PAGE = "login.php"
+  LOGIN = "#{ROOT}/#{LOGIN_PAGE}"
 
   BOOKMARK_PAGE = "bookmark.php"
   BOOKMARK = "#{ROOT}/#{BOOKMARK_PAGE}"
