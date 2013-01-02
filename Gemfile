@@ -1,5 +1,12 @@
 source "http://rubygems.org"
 gem 'mechanize'
 gem 'redis'
-gem 'rspec'
-gem 'webmock'
+group :development do
+  gem 'rspec'
+  gem 'webmock'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+end
