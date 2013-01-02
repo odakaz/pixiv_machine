@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <form class="login-form" action="/login.php" method="post">
+      <input type="hidden" name="mode" value="login">
+      <p>pixiv ID、またはメールアドレス</p>
+      <input type="text" class="js-placeholder" id="login_pixiv_id" name="pixiv_id" value="" maxlength="255" style="width:170px;padding:4px 0 2px 5px;">
+      <p>パスワード</p>
+      <input type="password" class="js-placeholder" id="login_password" name="pass" value="" maxlength="32" style="width:170px;padding:4px 0 2px 5px;">
+      <label><input name="skip" type="checkbox" value="1"> 次回から自動的にログイン</label>
+      <input type="submit" id="login_submit" value="ログイン" class="btn_type07">
+    </form>
+  </body>
+</html>

@@ -1,24 +1,27 @@
 module PixivMachine::URL
   ROOT = "http://www.pixiv.net"
 
-  INDEX_PAGE = "index.php"
-  INDEX = "#{ROOT}/#{INDEX_PAGE}"
+  INDEX = "index.php"
+  INDEX_PATH = "#{ROOT}/#{INDEX}"
 
-  LOGIN_PAGE = "login.php"
-  LOGIN = "#{ROOT}/#{LOGIN_PAGE}"
+  LOGIN = "login.php"
+  LOGIN_PATH = "#{ROOT}/#{LOGIN}"
 
-  BOOKMARK_PAGE = "bookmark.php"
-  BOOKMARK = "#{ROOT}/#{BOOKMARK_PAGE}"
-  USER_BOOKMARK = "#{BOOKMARK}?type=user"
+  MYPAGE = "mypage.php"
+  MYPAGE_PATH = "#{ROOT}/#{MYPAGE}"
 
-  USER_ILLUST_PAGE = "member_illust.php"
-  USER_ILLUST = "#{ROOT}/#{USER_ILLUST_PAGE}"
+  BOOKMARK = "bookmark.php"
+  BOOKMARK_PATH = "#{ROOT}/#{BOOKMARK}"
+  USER_BOOKMARK_PATH = "#{BOOKMARK_PATH}?type=user"
+
+  USER_ILLUST = "member_illust.php"
+  USER_ILLUST_PATH = "#{ROOT}/#{USER_ILLUST}"
 
   def user_bookmark_path(rest, page_index)
-    "#{USER_BOOKMARK}&rest=#{rest}&p=#{page_index}"
+    "#{USER_BOOKMARK_PATH}&rest=#{rest}&p=#{page_index}"
   end
 
   def user_illust_path(id, page_index)
-    "#{USER_ILLUST}?id=#{id}&p=#{page_index}"
+    "#{USER_ILLUST_PATH}?id=#{id}&p=#{page_index}"
   end
 end

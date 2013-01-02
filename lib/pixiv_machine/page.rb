@@ -15,21 +15,20 @@ class PixivMachine::Page
     @agent = agent
   end
 
-  private
   def login(page = nil)
     @logger.debug("login")
-    login_page = page || agent.get(INDEX)
-
+    login_page = page || agent.get(INDEX_PATH)
     login_form = login_page.form_with(:class => 'login-form')
     login_form['pixiv_id'] = @login_id
     login_form['pass'] = @password
 
     @page = login_form.submit
 
-    raise PixivMachine::LoginError if @page.uri.request_uri =~ /#{LOGIN_PAGE}/
+    raise PixivMachine::LoginError if @page.uri.request_uri =~ /#{LOGIN}/
     self
   end
 
+  private
   def get(uri, parameters = [], referer = nil, headers = {}, &block)
     @logger.debug("get [#{uri}] -> [#{full_path(uri)}]")
     sleep 1
@@ -37,7 +36,7 @@ class PixivMachine::Page
 
     # index.phpに戻ってきちゃったらログインしなおす。
     # ログインしなおすと、元々開きたかったページに勝手に行く。
-    login(@page) if @page.uri.request_uri =~ /#{INDEX_PAGE}/
+    login(@page) if @page.uri.request_uri =~ /#{INDEX}/
 
     yield @page if block_given?
     self
