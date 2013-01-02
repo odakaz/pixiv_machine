@@ -4,11 +4,14 @@ require 'uri'
 
 class PixivMachine::Page
   include PixivMachine::URL
-  attr_reader :agent, :page
+  attr_reader :login_id, :password, :agent, :page
 
-  def initialize(agent)
+  def initialize(login_id, password, agent)
     @logger = Logger.new(STDOUT)
     @logger.level = Logger::DEBUG
+
+    @login_id = login_id
+    @password = password
     @agent = agent
   end
 
@@ -18,7 +21,7 @@ class PixivMachine::Page
     login_page = page || agent.get(INDEX)
 
     login_form = login_page.form_with(:class => 'login-form')
-    login_form['pixiv_id'] = @id
+    login_form['pixiv_id'] = @login_id
     login_form['pass'] = @password
 
     @page = login_form.submit

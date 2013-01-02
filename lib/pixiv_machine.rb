@@ -6,12 +6,10 @@ require 'logger'
 class PixivMachine
   attr_reader :my_page
 
-  def initialize(id, password)
-    @id = id
-    @password = password
+  def initialize(login_id, password)
     @agent = Mechanize.new
 
-    @my_page = MyPage.new(id, password, @agent)
+    @my_page = MyPage.new(login_id, password, @agent)
   end
 end
 

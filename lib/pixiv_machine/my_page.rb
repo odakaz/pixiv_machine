@@ -1,18 +1,5 @@
 # -*- coding: utf-8 -*-
 class PixivMachine::MyPage < PixivMachine::PageablePage
-  attr_reader :id, :password
-
-  def initialize(id, password, agent)
-    super(agent)
-    @id = id
-    @password = password
-  end
-
-  def user_bookmark_page(rest, page_index = 0)
-    get(user_bookmark_path(rest, page_index))
-    self
-  end
-
   # 公開中のお気に入りユーザーブックマークページ
   def shown_user_bookmark_page(page_index = 0)
     user_bookmark_page('show', page_index)
@@ -36,6 +23,11 @@ class PixivMachine::MyPage < PixivMachine::PageablePage
   end
 
   private
+  def user_bookmark_page(rest, page_index = 0)
+    get(user_bookmark_path(rest, page_index))
+    self
+  end
+
   def get_users(page)
     users = []
     page.search('div.userdata a').each do |u|
