@@ -20,7 +20,7 @@ class PixivMachine::UserPage < PixivMachine::PageablePage
     illusts = []
     page.search('div.display_works li a').each do |i|
       id = i[:href].match(/illust_id=(\d+)/).to_a[1]
-      illusts << PixivMachine::IllustPage.new(id, agent) if id
+      illusts << PixivMachine::IllustPage.new(login_id, password, id, agent) if id
     end
 
     illusts
