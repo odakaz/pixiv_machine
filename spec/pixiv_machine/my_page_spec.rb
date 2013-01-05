@@ -45,22 +45,36 @@ describe PixivMachine::MyPage do
     context "ページ指定なし" do
       it {
         users = @page.shown_users
+
         users.size.should eq 48
-        users[0].login_id.should eq "id"
-        users[0].password.should eq "password"
-        users[0].agent.should eq @mech
-        users[0].id.should eq "1"
+
+        users.first.login_id.should eq "id"
+        users.first.password.should eq "password"
+        users.first.agent.should eq @mech
+        users.first.id.should eq "1"
+
+        users.last.login_id.should eq "id"
+        users.last.password.should eq "password"
+        users.last.agent.should eq @mech
+        users.last.id.should eq "48"
       }
     end
 
     context "ページ指定あり" do
       it {
         users = @page.shown_users 2
+
         users.size.should eq 48
-        users[0].login_id.should eq "id"
-        users[0].password.should eq "password"
-        users[0].agent.should eq @mech
-        users[0].id.should eq "49"
+
+        users.first.login_id.should eq "id"
+        users.first.password.should eq "password"
+        users.first.agent.should eq @mech
+        users.first.id.should eq "49"
+
+        users.last.login_id.should eq "id"
+        users.last.password.should eq "password"
+        users.last.agent.should eq @mech
+        users.last.id.should eq "96"
       }
     end
   end
@@ -70,10 +84,16 @@ describe PixivMachine::MyPage do
       it {
         users = @page.hidden_users
         users.size.should eq 48
-        users[0].login_id.should eq "id"
-        users[0].password.should eq "password"
-        users[0].agent.should eq @mech
-        users[0].id.should eq "101"
+
+        users.first.login_id.should eq "id"
+        users.first.password.should eq "password"
+        users.first.agent.should eq @mech
+        users.first.id.should eq "101"
+
+        users.last.login_id.should eq "id"
+        users.last.password.should eq "password"
+        users.last.agent.should eq @mech
+        users.last.id.should eq "148"
       }
     end
 
@@ -81,10 +101,16 @@ describe PixivMachine::MyPage do
       it {
         users = @page.hidden_users 2
         users.size.should eq 48
-        users[0].login_id.should eq "id"
-        users[0].password.should eq "password"
-        users[0].agent.should eq @mech
-        users[0].id.should eq "149"
+
+        users.first.login_id.should eq "id"
+        users.first.password.should eq "password"
+        users.first.agent.should eq @mech
+        users.first.id.should eq "149"
+
+        users.last.login_id.should eq "id"
+        users.last.password.should eq "password"
+        users.last.agent.should eq @mech
+        users.last.id.should eq "196"
       }
     end
   end
