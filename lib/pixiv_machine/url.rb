@@ -17,11 +17,11 @@ module PixivMachine::URL
   USER_ILLUST = "member_illust.php"
   USER_ILLUST_PATH = "#{ROOT}/#{USER_ILLUST}"
 
-  def user_bookmark_path(rest, page_index)
-    "#{USER_BOOKMARK_PATH}&rest=#{rest}&p=#{page_index}"
+  def user_bookmark_path(rest, page_number)
+    "#{USER_BOOKMARK_PATH}&rest=#{rest}&p=#{page_number}"
   end
 
-  def user_illust_path(id, page_index)
-    "#{USER_ILLUST_PATH}?id=#{id}&p=#{page_index}"
+  def user_illust_path(id, page_number)
+    "#{USER_ILLUST_PATH}?id=#{id}&p=#{page_number}"
   end
 end

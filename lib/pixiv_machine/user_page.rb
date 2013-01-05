@@ -6,13 +6,13 @@ class PixivMachine::UserPage < PixivMachine::PageablePage
     @id = id
   end
 
-  def illust_page(page_index = 0)
-    get(user_illust_path(id, page_index))
+  def illust_page(page_number = 1)
+    get(user_illust_path(id, page_number))
     self
   end
 
-  def illusts(page_index = 0)
-    get_illusts(illust_page(page_index).page)
+  def illusts(page_number = 1)
+    get_illusts(illust_page(page_number).page)
   end
 
   private

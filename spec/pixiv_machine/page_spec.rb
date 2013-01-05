@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 require 'spec_helper'
-include PixivMachine::URL
 
 describe PixivMachine::Page do
   before do
     @mech = Mechanize.new
     @page = PixivMachine::Page.new("id", "password", @mech)
+    setup_default_fixtures
   end
 
   describe "#new" do
@@ -16,16 +16,8 @@ describe PixivMachine::Page do
   end
 
   describe "#login" do
-    before do 
-      WebMock.stub_request(:get, INDEX_PATH).
-        to_return(:status => 200,
-                  :headers => {'Content-Type' => 'text/html'},
-                  :body => File.new("#{FIXTURE_ROOT}/index"))
-    end
-
-    subject {lambda{@page.login}}
-
     context "ログイン失敗" do
+      subject {lambda{@page.login}}
       before do
         WebMock.stub_request(:any, LOGIN_PATH).
           to_return(:status => 200, 
@@ -36,17 +28,8 @@ describe PixivMachine::Page do
     end
 
     context "ログイン成功" do
-      before do
-        WebMock.stub_request(:any, LOGIN_PATH).
-          to_return(:status => 302, 
-                    :headers => {'Location' => MYPAGE_PATH})
-
-        WebMock.stub_request(:any, MYPAGE_PATH).
-          to_return(:status => 200,
-                    :headers => {'Content-Type' => 'text/html'},
-                    :body => File.new("#{FIXTURE_ROOT}/mypage"))
-      end
-      it {@page.login.page.uri.request_uri.should =~ /mypage\.php/}
+      subject {@page.login}
+      its("page.uri.request_uri") {should =~ /mypage\.php/}
     end
   end
 end
