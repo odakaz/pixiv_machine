@@ -1,8 +1,8 @@
 class PixivMachine::UserPage < PixivMachine::PageablePage
   attr_reader :id
 
-  def initialize(id, agent)
-    super(agent)
+  def initialize(login_id, password, id, agent)
+    super(login_id, password, agent)
     @id = id
   end
 
