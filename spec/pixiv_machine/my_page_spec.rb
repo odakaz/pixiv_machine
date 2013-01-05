@@ -48,11 +48,13 @@ describe PixivMachine::MyPage do
 
         users.size.should eq 48
 
+        users.first.should be_an_instance_of PixivMachine::UserPage
         users.first.login_id.should eq "id"
         users.first.password.should eq "password"
         users.first.agent.should eq @mech
         users.first.id.should eq "1"
 
+        users.last.should be_an_instance_of PixivMachine::UserPage
         users.last.login_id.should eq "id"
         users.last.password.should eq "password"
         users.last.agent.should eq @mech
@@ -66,11 +68,13 @@ describe PixivMachine::MyPage do
 
         users.size.should eq 10
 
+        users.first.should be_an_instance_of PixivMachine::UserPage
         users.first.login_id.should eq "id"
         users.first.password.should eq "password"
         users.first.agent.should eq @mech
         users.first.id.should eq "49"
 
+        users.last.should be_an_instance_of PixivMachine::UserPage
         users.last.login_id.should eq "id"
         users.last.password.should eq "password"
         users.last.agent.should eq @mech
@@ -85,11 +89,13 @@ describe PixivMachine::MyPage do
         users = @page.hidden_users
         users.size.should eq 48
 
+        users.first.should be_an_instance_of PixivMachine::UserPage
         users.first.login_id.should eq "id"
         users.first.password.should eq "password"
         users.first.agent.should eq @mech
         users.first.id.should eq "101"
 
+        users.last.should be_an_instance_of PixivMachine::UserPage
         users.last.login_id.should eq "id"
         users.last.password.should eq "password"
         users.last.agent.should eq @mech
@@ -102,11 +108,13 @@ describe PixivMachine::MyPage do
         users = @page.hidden_users 2
         users.size.should eq 10
 
+        users.first.should be_an_instance_of PixivMachine::UserPage
         users.first.login_id.should eq "id"
         users.first.password.should eq "password"
         users.first.agent.should eq @mech
         users.first.id.should eq "149"
 
+        users.last.should be_an_instance_of PixivMachine::UserPage
         users.last.login_id.should eq "id"
         users.last.password.should eq "password"
         users.last.agent.should eq @mech

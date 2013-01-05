@@ -32,11 +32,13 @@ describe PixivMachine::UserPage do
 
         illusts.size.should eq 48
 
+        illusts.first.should be_an_instance_of PixivMachine::IllustPage
         illusts.first.login_id.should eq 'id'
         illusts.first.password.should eq 'password'
         illusts.first.id.should eq '1'
         illusts.first.agent.should eq @mech
 
+        illusts.last.should be_an_instance_of PixivMachine::IllustPage
         illusts.last.login_id.should eq 'id'
         illusts.last.password.should eq 'password'
         illusts.last.id.should eq '48'
@@ -50,11 +52,13 @@ describe PixivMachine::UserPage do
 
         illusts.size.should eq 10
 
+        illusts.first.should be_an_instance_of PixivMachine::IllustPage
         illusts.first.login_id.should eq 'id'
         illusts.first.password.should eq 'password'
         illusts.first.id.should eq '49'
         illusts.first.agent.should eq @mech
 
+        illusts.last.should be_an_instance_of PixivMachine::IllustPage
         illusts.last.login_id.should eq 'id'
         illusts.last.password.should eq 'password'
         illusts.last.id.should eq '58'
