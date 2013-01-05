@@ -31,7 +31,7 @@ class PixivMachine::Page
   private
   def get(uri, parameters = [], referer = nil, headers = {}, &block)
     @logger.debug("get [#{uri}] -> [#{full_path(uri)}]")
-    sleep 1
+    sleep 0.5
     @page = agent.get(full_path(uri), parameters, referer, headers)
 
     # index.phpに戻ってきちゃったらログインしなおす。
