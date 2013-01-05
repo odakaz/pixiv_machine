@@ -3,7 +3,6 @@ require 'spec_helper'
 include PixivMachine::URL
 
 describe PixivMachine::Page do
-
   before do
     @mech = Mechanize.new
     @page = PixivMachine::Page.new("id", "password", @mech)
@@ -18,10 +17,10 @@ describe PixivMachine::Page do
 
   describe "#login" do
     before do 
-        WebMock.stub_request(:get, INDEX_PATH).
-          to_return(:status => 200,
-                    :headers => {'Content-Type' => 'text/html'},
-                    :body => File.new("#{FIXTURE_ROOT}/index"))
+      WebMock.stub_request(:get, INDEX_PATH).
+        to_return(:status => 200,
+                  :headers => {'Content-Type' => 'text/html'},
+                  :body => File.new("#{FIXTURE_ROOT}/index"))
     end
 
     subject {lambda{@page.login}}
@@ -47,7 +46,7 @@ describe PixivMachine::Page do
                     :headers => {'Content-Type' => 'text/html'},
                     :body => File.new("#{FIXTURE_ROOT}/mypage"))
       end
-      it {@page.login.page.uri.request_uri.should =~ /mypage/}
+      it {@page.login.page.uri.request_uri.should =~ /mypage\.php/}
     end
   end
 end
