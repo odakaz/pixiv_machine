@@ -64,7 +64,7 @@ describe PixivMachine::MyPage do
       it {
         users = @page.shown_users 2
 
-        users.size.should eq 48
+        users.size.should eq 10
 
         users.first.login_id.should eq "id"
         users.first.password.should eq "password"
@@ -74,7 +74,7 @@ describe PixivMachine::MyPage do
         users.last.login_id.should eq "id"
         users.last.password.should eq "password"
         users.last.agent.should eq @mech
-        users.last.id.should eq "96"
+        users.last.id.should eq "58"
       }
     end
   end
@@ -100,7 +100,7 @@ describe PixivMachine::MyPage do
     context "ページ指定あり" do
       it {
         users = @page.hidden_users 2
-        users.size.should eq 48
+        users.size.should eq 10
 
         users.first.login_id.should eq "id"
         users.first.password.should eq "password"
@@ -110,7 +110,7 @@ describe PixivMachine::MyPage do
         users.last.login_id.should eq "id"
         users.last.password.should eq "password"
         users.last.agent.should eq @mech
-        users.last.id.should eq "196"
+        users.last.id.should eq "158"
       }
     end
   end

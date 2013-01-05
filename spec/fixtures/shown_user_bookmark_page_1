@@ -9,7 +9,8 @@
       </ol>
     </div>
     <ul>
-      <li><input name="id[]" value="1" type="checkbox">
+      <li>
+        <input name="id[]" value="1" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=1"><img src="1_image.jpg" alt="ユーザー1"></a>
         </div>
@@ -17,7 +18,8 @@
           <a href="http://www.pixiv.net/member.php?id=1">ユーザー1</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="2" type="checkbox">
+      <li>
+        <input name="id[]" value="2" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=2"><img src="2_image.jpg" alt="ユーザー2"></a>
         </div>
@@ -25,7 +27,8 @@
           <a href="http://www.pixiv.net/member.php?id=2">ユーザー2</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="3" type="checkbox">
+      <li>
+        <input name="id[]" value="3" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=3"><img src="3_image.jpg" alt="ユーザー3"></a>
         </div>
@@ -33,7 +36,8 @@
           <a href="http://www.pixiv.net/member.php?id=3">ユーザー3</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="4" type="checkbox">
+      <li>
+        <input name="id[]" value="4" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=4"><img src="4_image.jpg" alt="ユーザー4"></a>
         </div>
@@ -41,7 +45,8 @@
           <a href="http://www.pixiv.net/member.php?id=4">ユーザー4</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="5" type="checkbox">
+      <li>
+        <input name="id[]" value="5" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=5"><img src="5_image.jpg" alt="ユーザー5"></a>
         </div>
@@ -49,7 +54,8 @@
           <a href="http://www.pixiv.net/member.php?id=5">ユーザー5</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="6" type="checkbox">
+      <li>
+        <input name="id[]" value="6" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=6"><img src="6_image.jpg" alt="ユーザー6"></a>
         </div>
@@ -57,7 +63,8 @@
           <a href="http://www.pixiv.net/member.php?id=6">ユーザー6</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="7" type="checkbox">
+      <li>
+        <input name="id[]" value="7" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=7"><img src="7_image.jpg" alt="ユーザー7"></a>
         </div>
@@ -65,7 +72,8 @@
           <a href="http://www.pixiv.net/member.php?id=7">ユーザー7</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="8" type="checkbox">
+      <li>
+        <input name="id[]" value="8" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=8"><img src="8_image.jpg" alt="ユーザー8"></a>
         </div>
@@ -73,7 +81,8 @@
           <a href="http://www.pixiv.net/member.php?id=8">ユーザー8</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="9" type="checkbox">
+      <li>
+        <input name="id[]" value="9" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=9"><img src="9_image.jpg" alt="ユーザー9"></a>
         </div>
@@ -81,7 +90,8 @@
           <a href="http://www.pixiv.net/member.php?id=9">ユーザー9</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="10" type="checkbox">
+      <li>
+        <input name="id[]" value="10" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=10"><img src="10_image.jpg" alt="ユーザー10"></a>
         </div>
@@ -89,7 +99,8 @@
           <a href="http://www.pixiv.net/member.php?id=10">ユーザー10</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="11" type="checkbox">
+      <li>
+        <input name="id[]" value="11" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=11"><img src="11_image.jpg" alt="ユーザー11"></a>
         </div>
@@ -97,7 +108,8 @@
           <a href="http://www.pixiv.net/member.php?id=11">ユーザー11</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="12" type="checkbox">
+      <li>
+        <input name="id[]" value="12" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=12"><img src="12_image.jpg" alt="ユーザー12"></a>
         </div>
@@ -105,7 +117,8 @@
           <a href="http://www.pixiv.net/member.php?id=12">ユーザー12</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="13" type="checkbox">
+      <li>
+        <input name="id[]" value="13" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=13"><img src="13_image.jpg" alt="ユーザー13"></a>
         </div>
@@ -113,7 +126,8 @@
           <a href="http://www.pixiv.net/member.php?id=13">ユーザー13</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="14" type="checkbox">
+      <li>
+        <input name="id[]" value="14" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=14"><img src="14_image.jpg" alt="ユーザー14"></a>
         </div>
@@ -121,7 +135,8 @@
           <a href="http://www.pixiv.net/member.php?id=14">ユーザー14</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="15" type="checkbox">
+      <li>
+        <input name="id[]" value="15" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=15"><img src="15_image.jpg" alt="ユーザー15"></a>
         </div>
@@ -129,7 +144,8 @@
           <a href="http://www.pixiv.net/member.php?id=15">ユーザー15</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="16" type="checkbox">
+      <li>
+        <input name="id[]" value="16" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=16"><img src="16_image.jpg" alt="ユーザー16"></a>
         </div>
@@ -137,7 +153,8 @@
           <a href="http://www.pixiv.net/member.php?id=16">ユーザー16</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="17" type="checkbox">
+      <li>
+        <input name="id[]" value="17" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=17"><img src="17_image.jpg" alt="ユーザー17"></a>
         </div>
@@ -145,7 +162,8 @@
           <a href="http://www.pixiv.net/member.php?id=17">ユーザー17</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="18" type="checkbox">
+      <li>
+        <input name="id[]" value="18" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=18"><img src="18_image.jpg" alt="ユーザー18"></a>
         </div>
@@ -153,7 +171,8 @@
           <a href="http://www.pixiv.net/member.php?id=18">ユーザー18</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="19" type="checkbox">
+      <li>
+        <input name="id[]" value="19" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=19"><img src="19_image.jpg" alt="ユーザー19"></a>
         </div>
@@ -161,7 +180,8 @@
           <a href="http://www.pixiv.net/member.php?id=19">ユーザー19</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="20" type="checkbox">
+      <li>
+        <input name="id[]" value="20" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=20"><img src="20_image.jpg" alt="ユーザー20"></a>
         </div>
@@ -169,7 +189,8 @@
           <a href="http://www.pixiv.net/member.php?id=20">ユーザー20</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="21" type="checkbox">
+      <li>
+        <input name="id[]" value="21" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=21"><img src="21_image.jpg" alt="ユーザー21"></a>
         </div>
@@ -177,7 +198,8 @@
           <a href="http://www.pixiv.net/member.php?id=21">ユーザー21</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="22" type="checkbox">
+      <li>
+        <input name="id[]" value="22" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=22"><img src="22_image.jpg" alt="ユーザー22"></a>
         </div>
@@ -185,7 +207,8 @@
           <a href="http://www.pixiv.net/member.php?id=22">ユーザー22</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="23" type="checkbox">
+      <li>
+        <input name="id[]" value="23" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=23"><img src="23_image.jpg" alt="ユーザー23"></a>
         </div>
@@ -193,7 +216,8 @@
           <a href="http://www.pixiv.net/member.php?id=23">ユーザー23</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="24" type="checkbox">
+      <li>
+        <input name="id[]" value="24" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=24"><img src="24_image.jpg" alt="ユーザー24"></a>
         </div>
@@ -201,7 +225,8 @@
           <a href="http://www.pixiv.net/member.php?id=24">ユーザー24</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="25" type="checkbox">
+      <li>
+        <input name="id[]" value="25" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=25"><img src="25_image.jpg" alt="ユーザー25"></a>
         </div>
@@ -209,7 +234,8 @@
           <a href="http://www.pixiv.net/member.php?id=25">ユーザー25</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="26" type="checkbox">
+      <li>
+        <input name="id[]" value="26" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=26"><img src="26_image.jpg" alt="ユーザー26"></a>
         </div>
@@ -217,7 +243,8 @@
           <a href="http://www.pixiv.net/member.php?id=26">ユーザー26</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="27" type="checkbox">
+      <li>
+        <input name="id[]" value="27" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=27"><img src="27_image.jpg" alt="ユーザー27"></a>
         </div>
@@ -225,7 +252,8 @@
           <a href="http://www.pixiv.net/member.php?id=27">ユーザー27</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="28" type="checkbox">
+      <li>
+        <input name="id[]" value="28" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=28"><img src="28_image.jpg" alt="ユーザー28"></a>
         </div>
@@ -233,7 +261,8 @@
           <a href="http://www.pixiv.net/member.php?id=28">ユーザー28</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="29" type="checkbox">
+      <li>
+        <input name="id[]" value="29" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=29"><img src="29_image.jpg" alt="ユーザー29"></a>
         </div>
@@ -241,7 +270,8 @@
           <a href="http://www.pixiv.net/member.php?id=29">ユーザー29</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="30" type="checkbox">
+      <li>
+        <input name="id[]" value="30" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=30"><img src="30_image.jpg" alt="ユーザー30"></a>
         </div>
@@ -249,7 +279,8 @@
           <a href="http://www.pixiv.net/member.php?id=30">ユーザー30</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="31" type="checkbox">
+      <li>
+        <input name="id[]" value="31" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=31"><img src="31_image.jpg" alt="ユーザー31"></a>
         </div>
@@ -257,7 +288,8 @@
           <a href="http://www.pixiv.net/member.php?id=31">ユーザー31</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="32" type="checkbox">
+      <li>
+        <input name="id[]" value="32" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=32"><img src="32_image.jpg" alt="ユーザー32"></a>
         </div>
@@ -265,7 +297,8 @@
           <a href="http://www.pixiv.net/member.php?id=32">ユーザー32</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="33" type="checkbox">
+      <li>
+        <input name="id[]" value="33" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=33"><img src="33_image.jpg" alt="ユーザー33"></a>
         </div>
@@ -273,7 +306,8 @@
           <a href="http://www.pixiv.net/member.php?id=33">ユーザー33</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="34" type="checkbox">
+      <li>
+        <input name="id[]" value="34" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=34"><img src="34_image.jpg" alt="ユーザー34"></a>
         </div>
@@ -281,7 +315,8 @@
           <a href="http://www.pixiv.net/member.php?id=34">ユーザー34</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="35" type="checkbox">
+      <li>
+        <input name="id[]" value="35" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=35"><img src="35_image.jpg" alt="ユーザー35"></a>
         </div>
@@ -289,7 +324,8 @@
           <a href="http://www.pixiv.net/member.php?id=35">ユーザー35</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="36" type="checkbox">
+      <li>
+        <input name="id[]" value="36" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=36"><img src="36_image.jpg" alt="ユーザー36"></a>
         </div>
@@ -297,7 +333,8 @@
           <a href="http://www.pixiv.net/member.php?id=36">ユーザー36</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="37" type="checkbox">
+      <li>
+        <input name="id[]" value="37" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=37"><img src="37_image.jpg" alt="ユーザー37"></a>
         </div>
@@ -305,7 +342,8 @@
           <a href="http://www.pixiv.net/member.php?id=37">ユーザー37</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="38" type="checkbox">
+      <li>
+        <input name="id[]" value="38" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=38"><img src="38_image.jpg" alt="ユーザー38"></a>
         </div>
@@ -313,7 +351,8 @@
           <a href="http://www.pixiv.net/member.php?id=38">ユーザー38</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="39" type="checkbox">
+      <li>
+        <input name="id[]" value="39" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=39"><img src="39_image.jpg" alt="ユーザー39"></a>
         </div>
@@ -321,7 +360,8 @@
           <a href="http://www.pixiv.net/member.php?id=39">ユーザー39</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="40" type="checkbox">
+      <li>
+        <input name="id[]" value="40" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=40"><img src="40_image.jpg" alt="ユーザー40"></a>
         </div>
@@ -329,7 +369,8 @@
           <a href="http://www.pixiv.net/member.php?id=40">ユーザー40</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="41" type="checkbox">
+      <li>
+        <input name="id[]" value="41" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=41"><img src="41_image.jpg" alt="ユーザー41"></a>
         </div>
@@ -337,7 +378,8 @@
           <a href="http://www.pixiv.net/member.php?id=41">ユーザー41</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="42" type="checkbox">
+      <li>
+        <input name="id[]" value="42" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=42"><img src="42_image.jpg" alt="ユーザー42"></a>
         </div>
@@ -345,7 +387,8 @@
           <a href="http://www.pixiv.net/member.php?id=42">ユーザー42</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="43" type="checkbox">
+      <li>
+        <input name="id[]" value="43" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=43"><img src="43_image.jpg" alt="ユーザー43"></a>
         </div>
@@ -353,7 +396,8 @@
           <a href="http://www.pixiv.net/member.php?id=43">ユーザー43</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="44" type="checkbox">
+      <li>
+        <input name="id[]" value="44" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=44"><img src="44_image.jpg" alt="ユーザー44"></a>
         </div>
@@ -361,7 +405,8 @@
           <a href="http://www.pixiv.net/member.php?id=44">ユーザー44</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="45" type="checkbox">
+      <li>
+        <input name="id[]" value="45" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=45"><img src="45_image.jpg" alt="ユーザー45"></a>
         </div>
@@ -369,7 +414,8 @@
           <a href="http://www.pixiv.net/member.php?id=45">ユーザー45</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="46" type="checkbox">
+      <li>
+        <input name="id[]" value="46" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=46"><img src="46_image.jpg" alt="ユーザー46"></a>
         </div>
@@ -377,7 +423,8 @@
           <a href="http://www.pixiv.net/member.php?id=46">ユーザー46</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="47" type="checkbox">
+      <li>
+        <input name="id[]" value="47" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=47"><img src="47_image.jpg" alt="ユーザー47"></a>
         </div>
@@ -385,7 +432,8 @@
           <a href="http://www.pixiv.net/member.php?id=47">ユーザー47</a>コメント<br><span>&nbsp;</span>
         </div>
       </li>
-      <li><input name="id[]" value="48" type="checkbox">
+      <li>
+        <input name="id[]" value="48" type="checkbox">
         <div class="usericon">
           <a href="http://www.pixiv.net/member.php?id=48"><img src="48_image.jpg" alt="ユーザー48"></a>
         </div>
