@@ -21,7 +21,24 @@ module PixivMachine::URL
     "#{USER_BOOKMARK_PATH}&rest=#{rest}&p=#{page_number}"
   end
 
-  def user_illust_path(id, page_number)
-    "#{USER_ILLUST_PATH}?id=#{id}&p=#{page_number}"
+  def user_illust_path(user_id, page_number)
+    "#{USER_ILLUST_PATH}?id=#{user_id}&p=#{page_number}"
+  end
+
+  def illust_overview_path(illust_id)
+    content_path('medium', illust_id)
+  end
+
+  def illust_detail_path(illust_id)
+    content_path('big', illust_id)
+  end
+
+  def manga_detail_path(manga_id)
+    content_path('manga', manga_id)
+  end
+
+  private
+  def content_path(mode, id)
+    "#{USER_ILLUST_PATH}?mode=#{mode}&illust_id=#{id}"
   end
 end

@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <div class="works_display">
+      <a href="member_illust.php?mode=manga&illust_id=20000" target="_blank">
+        <img src="http://i1.pixiv.net/img07/img/wata_domingez/20000_m.jpg" alt="" title="クリックして漫画を読む" border="0">
+      </a>
+    </div>
+  </body>
+</html>

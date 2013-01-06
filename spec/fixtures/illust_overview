@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <div class="works_display">
+      <a href="member_illust.php?mode=big&illust_id=10000" target="_blank">
+        <img src="http://xxx.yyyy.net/zzzz/wwww/vvvvv/10000_m.jpg" alt="alt" title="タイトル" border="0">
+      </a>
+    </div>
+  </body>
+</html>

@@ -19,9 +19,12 @@ end
 class PixivMachine::LoginError < PixivMachine::PixivError
 end
 
-require File.expand_path(File.dirname(__FILE__) + '/pixiv_machine/url')
-require File.expand_path(File.dirname(__FILE__) + '/pixiv_machine/page')
-require File.expand_path(File.dirname(__FILE__) + '/pixiv_machine/pageable_page')
-require File.expand_path(File.dirname(__FILE__) + '/pixiv_machine/my_page')
-require File.expand_path(File.dirname(__FILE__) + '/pixiv_machine/user_page')
-require File.expand_path(File.dirname(__FILE__) + '/pixiv_machine/illust_page')
+require_relative 'pixiv_machine/url'
+require_relative 'pixiv_machine/page'
+require_relative 'pixiv_machine/pageable_page'
+require_relative 'pixiv_machine/my_page'
+require_relative 'pixiv_machine/user_page'
+require_relative 'pixiv_machine/illust_page'
+require_relative 'pixiv_machine/illust_detail_page'
+require_relative 'pixiv_machine/manga_detail_page'
+require_relative 'pixiv_machine/content'

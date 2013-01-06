@@ -16,7 +16,6 @@ class PixivMachine::Page
   end
 
   def login(page = nil)
-    @logger.debug("login")
     login_page = page || agent.get(INDEX_PATH)
     login_form = login_page.form_with(:class => 'login-form')
     login_form['pixiv_id'] = @login_id
