@@ -8,7 +8,8 @@ class PixivMachine::Page
 
   def initialize(login_id, password, agent)
     @logger = Logger.new(STDOUT)
-    @logger.level = Logger::DEBUG
+    @logger.level = Logger::INFO
+    @logger.level = Logger::DEBUG if $DEBUG
 
     @login_id = login_id
     @password = password
