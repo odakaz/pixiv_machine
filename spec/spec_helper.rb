@@ -86,33 +86,4 @@ def setup_default_fixtures
     to_return(:status => 200,
               :headers => {'Content-Type' => 'text/html'},
               :body => File.new("#{FIXTURE_ROOT}/blank"))
-
-  # イラストの詳細ページ
-  WebMock.stub_request(:get, USER_ILLUST_PATH).
-    with(:query => {:mode => 'big', :illust_id => '10000'}).
-    to_return(:status => 200,
-              :headers => {'Content-Type' => 'text/html'},
-              :body => File.new("#{FIXTURE_ROOT}/illust_detail"))
-
-  # マンガの詳細ページ
-  WebMock.stub_request(:get, USER_ILLUST_PATH).
-    with(:query => {:mode => 'manga', :illust_id => '20000'}).
-    to_return(:status => 200,
-              :headers => {'Content-Type' => 'text/html'},
-              :body => File.new("#{FIXTURE_ROOT}/manga_detail"))
-
-  # 存在しないイラストの詳細ページ
-  WebMock.stub_request(:get, USER_ILLUST_PATH).
-    with(:query => {:mode => 'big', :illust_id => '30000'}).
-    to_return(:status => 200,
-              :headers => {'Content-Type' => 'text/html'},
-              :body => File.new("#{FIXTURE_ROOT}/blank"))
-  
-  # 存在しないマンガの詳細ページ
-  WebMock.stub_request(:get, USER_ILLUST_PATH).
-    with(:query => {:mode => 'manga', :illust_id => '30000'}).
-    to_return(:status => 200,
-              :headers => {'Content-Type' => 'text/html'},
-              :body => File.new("#{FIXTURE_ROOT}/blank"))
-  
 end
