@@ -4,7 +4,7 @@ require 'spec_helper'
 describe PixivMachine::Page do
   before do
     @mech = Mechanize.new
-    @page = PixivMachine::Page.new("id", "password", @mech)
+    @page = PixivMachine::Page.new(@mech, "id", "password")
     setup_default_fixtures
   end
 

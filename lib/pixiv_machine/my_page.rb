@@ -32,7 +32,7 @@ class PixivMachine::MyPage < PixivMachine::PageablePage
     users = []
     page.search('div.userdata a').each do |u|
       id = u[:href].match(/id=(\d+)/).to_a[1]
-      users << PixivMachine::UserPage.new(login_id, password, id, agent) if id
+      users << PixivMachine::UserPage.new(agent, login_id, password, id) if id
     end
 
     users

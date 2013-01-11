@@ -5,7 +5,7 @@ include PixivMachine::URL
 describe PixivMachine::MyPage do
   before do
     @mech = Mechanize.new
-    @page = PixivMachine::MyPage.new("id", "password", @mech)
+    @page = PixivMachine::MyPage.new(@mech, "id", "password")
     setup_default_fixtures
   end
 

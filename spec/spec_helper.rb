@@ -86,4 +86,13 @@ def setup_default_fixtures
     to_return(:status => 200,
               :headers => {'Content-Type' => 'text/html'},
               :body => File.new("#{FIXTURE_ROOT}/blank"))
+
+  # イラストページのダミー
+  (1..58).each do |illust_id|
+    WebMock.stub_request(:get, USER_ILLUST_PATH).
+      with(:query => {:mode => 'medium', :illust_id => illust_id}).
+      to_return(:status => 200,
+                :headers => {'Content-Type' => 'text/html'},
+                :body => File.new("#{FIXTURE_ROOT}/blank"))
+  end
 end

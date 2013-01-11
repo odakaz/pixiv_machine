@@ -24,5 +24,4 @@ require_relative 'pixiv_machine/page'
 require_relative 'pixiv_machine/pageable_page'
 require_relative 'pixiv_machine/my_page'
 require_relative 'pixiv_machine/user_page'
-require_relative 'pixiv_machine/illust_page'
-
+require_relative 'pixiv_machine/illusts_page'
