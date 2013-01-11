@@ -9,6 +9,8 @@ describe PixivMachine  do
   describe "#new" do
     subject {@pixiv_machine.my_page}
     it {should_not be_nil}
-    its(:class) {should == PixivMachine::MyPage }
+    it {should be_an_instance_of PixivMachine::MyPage}
+    its(:login_id) {should eq 'id'}
+    its(:password) {should eq 'pass'} 
   end
 end

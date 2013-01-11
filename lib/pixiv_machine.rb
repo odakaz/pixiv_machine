@@ -9,7 +9,7 @@ class PixivMachine
   def initialize(login_id, password)
     @agent = Mechanize.new
 
-    @my_page = MyPage.new(login_id, password, @agent)
+    @my_page = MyPage.new(@agent, login_id, password)
   end
 end
 
