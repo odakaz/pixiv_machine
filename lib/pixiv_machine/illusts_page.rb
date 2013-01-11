@@ -5,6 +5,18 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
 
   attr_reader :user_id
 
+  def has_next?
+    current
+    next_link = page.search("div.pages ol li a.button[rel='next']")
+    !next_link.empty?
+  end
+
+  def has_prev?
+    current
+    prev_link = page.search("div.pages ol li a.button[rel='prev']")
+    !prev_link.empty?
+  end
+
   def initialize(agent, login_id, password, user_id, page_number = 1)
     super(agent, login_id, password)
     @user_id = user_id
@@ -12,7 +24,7 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
   end
 
   def illusts(page_number = current_page_number)
-    get_illusts(get(user_illust_path(user_id, page_number)).page)
+    get_illusts(nth_page(page_number).page)
   end
 
   private
@@ -26,5 +38,9 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
     end
 
     illusts
+  end
+
+  def page_to_uri(page_number)
+    user_illust_path(user_id, page_number)
   end
 end

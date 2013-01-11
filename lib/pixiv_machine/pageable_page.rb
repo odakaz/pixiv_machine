@@ -11,10 +11,28 @@ class PixivMachine::PageablePage < PixivMachine::Page
   end
 
   def next
-    raise 'next is not implemented!'
+    nth_page(current_page_number + 1) if has_next?
+    self
+  end
+
+  # 指定したページに移動する
+  def nth_page(page_number)
+    @current_page_number = page_number
+    get(page_to_uri(page_number))
+    self
+  end
+
+  def current
+    nth_page(current_page_number)
   end
 
   def prev
-    raise 'prev is not implemented!'
+    nth_page(current_page_number - 1) if has_prev?
+    self
+  end
+
+  private
+  def page_to_uri(page_number)
+    railse 'page_to_uri is not implemented!'
   end
 end
