@@ -8,8 +8,7 @@ class PixivMachine::Page
 
   def initialize(agent, login_id, password)
     @logger = Logger.new(STDOUT)
-    @logger.level = Logger::INFO
-    @logger.level = Logger::DEBUG if $DEBUG
+    @logger.level = Logger::DEBUG
 
     @agent = agent
     @login_id = login_id
@@ -35,8 +34,10 @@ class PixivMachine::Page
     @page = agent.get(full_path(uri), parameters, referer, headers)
 
     # index.phpに戻ってきちゃったらログインしなおす。
-    # ログインしなおすと、元々開きたかったページに勝手に行く。
-    login(@page) if @page.uri.request_uri =~ /#{INDEX}/
+    if @page.uri.request_uri =~ /#{INDEX}/
+      login(@page) 
+      @page = agent.get(full_path(uri), parameters, referer, headers)
+    end
 
     yield @page if block_given?
     self

@@ -1,3 +1,5 @@
+require_relative 'content'
+
 class PixivMachine::IllustsPage < PixivMachine::PageablePage
   include PixivMachine::URL
 
@@ -16,10 +18,11 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
   private
   def get_illusts(page)
     illusts = []
-    
+
     page.search('div.display_works ul li a').each do |i|
       id = i[:href].match(/illust_id=(\d+)/).to_a[1]
-      illusts << agent.get(illust_overview_path(id)) if id
+      thumbnail_img = i.search('img')
+      illusts << PixivMachine::Content.new(id, thumbnail_img.first[:src]) if id && thumbnail_img && !thumbnail_img.empty?
     end
 
     illusts
