@@ -2,6 +2,11 @@
 class PixivMachine::PageablePage < PixivMachine::Page
   attr_reader :current_page_number
 
+  def initialize(agent, login_id, password, page_number = 1)
+    super(agent, login_id, password)
+    @current_page_number = page_number
+  end
+
   def has_next?
     raise 'has_next? is not implemented!'
   end

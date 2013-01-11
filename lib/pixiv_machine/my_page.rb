@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-class PixivMachine::MyPage < PixivMachine::PageablePage
+class PixivMachine::MyPage < PixivMachine::Page
   # 公開中のお気に入りユーザーブックマークページ
   def shown_user_bookmark_page(page_number = 1)
     user_bookmark_page('show', page_number)

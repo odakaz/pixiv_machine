@@ -1,9 +1,15 @@
 require_relative 'content'
+require_relative 'pageable_page'
 
 class PixivMachine::IllustsPage < PixivMachine::PageablePage
   include PixivMachine::URL
 
   attr_reader :user_id
+
+  def initialize(agent, login_id, password, user_id, page_number = 1)
+    super(agent, login_id, password, page_number)
+    @user_id = user_id
+  end
 
   def has_next?
     current
@@ -15,12 +21,6 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
     current
     prev_link = page.search("div.pages ol li a.button[rel='prev']")
     !prev_link.empty?
-  end
-
-  def initialize(agent, login_id, password, user_id, page_number = 1)
-    super(agent, login_id, password)
-    @user_id = user_id
-    @current_page_number = page_number
   end
 
   def illusts(page_number = current_page_number)

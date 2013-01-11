@@ -66,6 +66,13 @@ def setup_default_fixtures
               :headers => {'Content-Type' => 'text/html'},
               :body => File.new("#{FIXTURE_ROOT}/user_illust_page_2"))
 
+  # 作品一覧ページ　３ページ目
+  WebMock.stub_request(:get, USER_ILLUST_PATH).
+    with(:query => {:id => '999', :p => 3}).
+    to_return(:status => 200,
+              :headers => {'Content-Type' => 'text/html'},
+              :body => File.new("#{FIXTURE_ROOT}/user_illust_page_3"))
+
   # イラストページ
   WebMock.stub_request(:get, USER_ILLUST_PATH).
     with(:query => {:mode => 'medium', :illust_id => '10000'}).

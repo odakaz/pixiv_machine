@@ -1,0 +1,59 @@
+<html>
+  <body>
+    <div class="pages">
+      <ol>
+        <li><a href="member_illust.php?id=12345&p=2" class="button" rel="prev">« 前へ</a></li>
+        <li><a href="member_illust.php?id=12345&p=1">1</a></li>
+        <li><a href="member_illust.php?id=12345&p=2">2</a></li>
+        <li class="pages-current"><span>3</span></li><li>&nbsp;</li>
+      </ol>
+    </div>
+
+    <div class="display_works linkStyleWorks">
+      <ul>
+        <li>
+          <a href="/member_illust.php?mode=medium&illust_id=41">
+            <img src="http://xxxx.yyyy.net/img02/img/tokimon/xxxxxxx_s.jpg">
+            説明文
+          </a>
+        </li>
+        <li>
+          <a href="/member_illust.php?mode=medium&illust_id=42">
+            <img src="http://xxxx.yyyy.net/img02/img/tokimon/xxxxxxx_s.jpg">
+            説明文
+          </a>
+        </li>
+        <li>
+          <a href="/member_illust.php?mode=medium&illust_id=43">
+            <img src="http://xxxx.yyyy.net/img02/img/tokimon/xxxxxxx_s.jpg">
+            説明文
+          </a>
+        </li>
+        <li>
+          <a href="/member_illust.php?mode=medium&illust_id=44">
+            <img src="http://xxxx.yyyy.net/img02/img/tokimon/xxxxxxx_s.jpg">
+            説明文
+          </a>
+        </li>
+        <li>
+          <a href="/member_illust.php?mode=medium&illust_id=45">
+            <img src="http://xxxx.yyyy.net/img02/img/tokimon/xxxxxxx_s.jpg">
+            説明文
+          </a>
+        </li>
+        <li>
+          <a href="/member_illust.php?mode=medium&illust_id=46">
+            <img src="http://xxxx.yyyy.net/img02/img/tokimon/xxxxxxx_s.jpg">
+            説明文
+          </a>
+        </li>
+        <li>
+          <a href="/member_illust.php?mode=medium&illust_id=47">
+            <img src="http://xxxx.yyyy.net/img02/img/tokimon/xxxxxxx_s.jpg">
+            説明文
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

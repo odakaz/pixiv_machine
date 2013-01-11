@@ -16,7 +16,7 @@ describe PixivMachine::IllustsPage do
     end
 
     context "次ページがない場合" do
-      subject {@page.nth_page(2).has_next?}
+      subject {@page.nth_page(3).has_next?}
       it {should eq false}
     end
   end
@@ -43,9 +43,11 @@ describe PixivMachine::IllustsPage do
   describe "#illusts" do
     context "ページ指定なし" do
       subject {@page.illusts}
-      its(:size) {should eq 48}
+      its(:size) {should eq 20}
       its(:first) {should be_an_instance_of PixivMachine::Content}
+      its('first.id') {should eq '1'}
       its(:last) {should be_an_instance_of PixivMachine::Content}
+      its('last.id') {should eq '20'}
 
       it {
         @page.illusts
@@ -54,14 +56,16 @@ describe PixivMachine::IllustsPage do
     end
 
     context "ページ指定あり" do 
-      subject {@page.illusts 2}
-      its(:size) {should eq 10}
+      subject {@page.illusts 3}
+      its(:size) {should eq 7}
       its(:first) {should be_an_instance_of PixivMachine::Content}
+      its('first.id') {should eq '41'}
       its(:last) {should be_an_instance_of PixivMachine::Content}
+      its('last.id') {should eq '47'}
 
       it {
-        @page.illusts 2
-        WebMock.should have_requested(:get, USER_ILLUST_PATH).with(:query => {:id => '999', :p => '2'})
+        @page.illusts 3
+        WebMock.should have_requested(:get, USER_ILLUST_PATH).with(:query => {:id => '999', :p => '3'})
       }
     end
   end
