@@ -15,6 +15,10 @@ describe PixivMachine::IllustsPage do
         illusts = @page.illusts
         WebMock.should have_requested(:get, USER_ILLUST_PATH).with(:query => {:id => '999', :p => '1'})
         illusts.size.should eq 48
+
+        illusts.each {|i|
+          i.should be_an_instance_of PixivMachine::Content
+        }
       }
     end
 
@@ -23,6 +27,10 @@ describe PixivMachine::IllustsPage do
         illusts = @page.illusts 2
         WebMock.should have_requested(:get, USER_ILLUST_PATH).with(:query => {:id => '999', :p => '2'})
         illusts.size.should eq 10
+
+        illusts.each {|i|
+          i.should be_an_instance_of PixivMachine::Content
+        }
       }
     end
   end
