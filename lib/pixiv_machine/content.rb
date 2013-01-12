@@ -1,9 +1,10 @@
 class PixivMachine::Content
   include PixivMachine::URL
-  attr_reader :id, :thumbnail_uri
+  attr_reader :id, :title, :thumbnail_uri
 
-  def initialize(id, thumbnail_uri)
+  def initialize(id, title, thumbnail_uri)
     @id = id
+    @title = title
     @thumbnail_uri = thumbnail_uri
   end
 

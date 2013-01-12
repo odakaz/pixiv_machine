@@ -34,7 +34,9 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
     page.search('div.display_works ul li a').each do |i|
       id = i[:href].match(/illust_id=(\d+)/).to_a[1]
       thumbnail_img = i.search('img')
-      illusts << PixivMachine::Content.new(id, thumbnail_img.first[:src]) if id && thumbnail_img && !thumbnail_img.empty?
+      if id && thumbnail_img && !thumbnail_img.empty?
+        illusts << PixivMachine::Content.new(id, i.text, thumbnail_img.first[:src]) 
+      end
     end
 
     illusts
