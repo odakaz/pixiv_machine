@@ -5,6 +5,7 @@
         <li>&nbsp;</li>
         <li class="pages-current"><span>1</span></li>
         <li><a href="bookmark.php?type=user&rest=show&p=2">2</a></li>
+        <li><a href="bookmark.php?type=user&rest=show&p=3">3</a></li>
         <li><a href="bookmark.php?type=user&rest=show&p=2" class="button" rel="next">次へ »</a></li>
       </ol>
     </div>

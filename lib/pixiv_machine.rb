@@ -25,6 +25,7 @@ require_relative 'pixiv_machine/page'
 require_relative 'pixiv_machine/my_page'
 require_relative 'pixiv_machine/user_page'
 
+require_relative 'pixiv_machine/user_bookmark_page'
 require_relative 'pixiv_machine/illusts_page'
 
 require_relative 'pixiv_machine/content'

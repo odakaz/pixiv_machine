@@ -11,18 +11,6 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
     @user_id = user_id
   end
 
-  def has_next?
-    current
-    next_link = page.search("div.pages ol li a.button[rel='next']")
-    !next_link.empty?
-  end
-
-  def has_prev?
-    current
-    prev_link = page.search("div.pages ol li a.button[rel='prev']")
-    !prev_link.empty?
-  end
-
   def illusts(page_number = current_page_number)
     get_illusts(nth_page(page_number).page)
   end
@@ -44,5 +32,15 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
 
   def page_to_uri(page_number)
     user_illust_path(user_id, page_number)
+  end
+
+  def check_has_next
+    next_link = page.search("div.pages ol li a.button[rel='next']")
+    !next_link.empty?
+  end
+
+  def check_has_prev
+    prev_link = page.search("div.pages ol li a.button[rel='prev']")
+    !prev_link.empty?
   end
 end

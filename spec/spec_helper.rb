@@ -38,6 +38,13 @@ def setup_default_fixtures
               :headers => {'Content-Type' => 'text/html'},
               :body => File.new("#{FIXTURE_ROOT}/shown_user_bookmark_page_2"))
 
+  # 公開中お気に入りユーザーブックマークページ　３ページ目
+  WebMock.stub_request(:get, BOOKMARK_PATH).
+    with(:query => {:type => 'user', :p => '3', :rest => 'show'}).
+    to_return(:status => 200,
+              :headers => {'Content-Type' => 'text/html'},
+              :body => File.new("#{FIXTURE_ROOT}/shown_user_bookmark_page_3"))
+
   # 非公開中お気に入りユーザーブックマークページ　１ページ目
   WebMock.stub_request(:get, BOOKMARK_PATH).
     with(:query => {:type => 'user', :p => '1', :rest => 'hide'}).
@@ -51,6 +58,13 @@ def setup_default_fixtures
     to_return(:status => 200,
               :headers => {'Content-Type' => 'text/html'},
               :body => File.new("#{FIXTURE_ROOT}/hidden_user_bookmark_page_2"))
+
+  # 非公開中お気に入りユーザーブックマークページ　３ページ目
+  WebMock.stub_request(:get, BOOKMARK_PATH).
+    with(:query => {:type => 'user', :p => '3', :rest => 'hide'}).
+    to_return(:status => 200,
+              :headers => {'Content-Type' => 'text/html'},
+              :body => File.new("#{FIXTURE_ROOT}/hidden_user_bookmark_page_3"))
 
   # 作品一覧ページ　１ページ目
   WebMock.stub_request(:get, USER_ILLUST_PATH).

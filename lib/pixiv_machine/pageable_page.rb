@@ -8,15 +8,26 @@ class PixivMachine::PageablePage < PixivMachine::Page
   end
 
   def has_next?
-    raise 'has_next? is not implemented!'
+    current
+    check_has_next
   end
 
   def has_prev?
-    raise 'has_prev? is not implemented!'
+    current
+    check_has_prev
+  end
+
+  def current
+    nth_page(current_page_number)
   end
 
   def next
     nth_page(current_page_number + 1) if has_next?
+    self
+  end
+
+  def prev
+    nth_page(current_page_number - 1) if has_prev?
     self
   end
 
@@ -27,17 +38,16 @@ class PixivMachine::PageablePage < PixivMachine::Page
     self
   end
 
-  def current
-    nth_page(current_page_number)
-  end
-
-  def prev
-    nth_page(current_page_number - 1) if has_prev?
-    self
-  end
-
   private
   def page_to_uri(page_number)
-    railse 'page_to_uri is not implemented!'
+    raise 'page_to_uri is not implemented!'
+  end
+
+  def check_has_next
+    raise 'check_has_next is not implemented!'
+  end
+
+  def check_has_prev
+    raise 'check_has_prev is not implemented!'
   end
 end

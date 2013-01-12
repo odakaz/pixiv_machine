@@ -1,0 +1,105 @@
+<html>
+  <body>
+    <div class="pages">
+      <ol>
+        <li><a href="bookmark.php?type=user&rest=show&p=2" class="button" rel="prev">« 前へ</a></li>
+        <li><a href="bookmark.php?type=user&rest=show&p=1">1</a></li>
+        <li><a href="bookmark.php?type=user&rest=show&p=2">2</a></li>
+        <li class="pages-current"><span>3</span></li>
+        <li>&nbsp;</li>
+      </ol>
+    </div>
+    <ul>
+      <li>
+        <input name="id[]" value="97" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=97"><img src="97_image.jpg" alt="ユーザー97"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=97">ユーザー97</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="98" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=98"><img src="98_image.jpg" alt="ユーザー98"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=98">ユーザー98</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="99" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=99"><img src="99_image.jpg" alt="ユーザー99"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=99">ユーザー99</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="100" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=100"><img src="100_image.jpg" alt="ユーザー100"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=100">ユーザー100</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="101" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=101"><img src="101_image.jpg" alt="ユーザー101"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=101">ユーザー101</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="102" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=102"><img src="102_image.jpg" alt="ユーザー102"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=102">ユーザー102</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="103" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=103"><img src="103_image.jpg" alt="ユーザー103"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=103">ユーザー103</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="104" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=104"><img src="104_image.jpg" alt="ユーザー104"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=104">ユーザー104</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="105" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=105"><img src="105_image.jpg" alt="ユーザー105"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=105">ユーザー105</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+      <li>
+        <input name="id[]" value="106" type="checkbox">
+        <div class="usericon">
+          <a href="http://www.pixiv.net/member.php?id=106"><img src="106_image.jpg" alt="ユーザー106"></a>
+        </div>
+        <div class="userdata">
+          <a href="http://www.pixiv.net/member.php?id=106">ユーザー106</a>コメント<br><span>&nbsp;</span>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
