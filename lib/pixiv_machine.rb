@@ -6,10 +6,21 @@ require 'logger'
 class PixivMachine
   attr_reader :my_page
 
+  @@logger = Logger.new(STDOUT)
+  @@logger.level = Logger::WARN
+
   def initialize(login_id, password)
     @agent = Mechanize.new
 
     @my_page = MyPage.new(@agent, login_id, password)
+  end
+
+  def self.log_level=(level)
+    @@logger.level = level
+  end
+
+  def self.logger
+    @@logger
   end
 end
 

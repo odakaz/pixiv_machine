@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-require 'logger'
 require 'uri'
 
 class PixivMachine::Page
@@ -7,9 +6,6 @@ class PixivMachine::Page
   attr_reader :login_id, :password, :agent, :page
 
   def initialize(agent, login_id, password)
-    @logger = Logger.new(STDOUT)
-    @logger.level = Logger::WARN
-
     @agent = agent
     @login_id = login_id
     @password = password
@@ -29,7 +25,7 @@ class PixivMachine::Page
 
   private
   def get(uri, parameters = [], referer = nil, headers = {}, &block)
-    @logger.debug("get [#{full_path(uri)}]")
+    PixivMachine.logger.debug("get [#{full_path(uri)}]")
     sleep 0.5
     @page = agent.get(full_path(uri), parameters, referer, headers)
 
