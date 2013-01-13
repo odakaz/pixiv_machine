@@ -18,7 +18,7 @@ class PixivMachine::PageablePage < PixivMachine::Page
   end
 
   def current
-    nth_page(current_page_number)
+    nth_page(current_page_number) unless page
   end
 
   def next
@@ -31,6 +31,17 @@ class PixivMachine::PageablePage < PixivMachine::Page
     self
   end
 
+  def each_body(&block)
+    nth_page(1)
+
+    yield(page_body(page))
+
+    while has_next?
+      self.next
+      yield(page_body(page))
+    end
+  end
+
   # 指定したページに移動する
   def nth_page(page_number)
     @current_page_number = page_number
@@ -41,6 +52,10 @@ class PixivMachine::PageablePage < PixivMachine::Page
   private
   def page_to_uri(page_number)
     raise 'page_to_uri is not implemented!'
+  end
+
+  def page_body(page)
+    raise 'page_body is not implemented!'
   end
 
   def check_has_next

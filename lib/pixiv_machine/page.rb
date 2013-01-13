@@ -8,7 +8,7 @@ class PixivMachine::Page
 
   def initialize(agent, login_id, password)
     @logger = Logger.new(STDOUT)
-    @logger.level = Logger::WARN
+    @logger.level = Logger::DEBUG
 
     @agent = agent
     @login_id = login_id
@@ -29,7 +29,7 @@ class PixivMachine::Page
 
   private
   def get(uri, parameters = [], referer = nil, headers = {}, &block)
-    @logger.debug("get [#{uri}] -> [#{full_path(uri)}]")
+    @logger.debug("get [#{full_path(uri)}]")
     sleep 0.5
     @page = agent.get(full_path(uri), parameters, referer, headers)
 

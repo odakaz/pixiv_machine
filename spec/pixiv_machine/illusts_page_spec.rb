@@ -37,6 +37,14 @@ describe PixivMachine::IllustsPage do
     end
   end
 
+  describe "#each_body" do
+    before do
+      @page = PixivMachine::IllustsPage.new(@mech, 'id', 'password', '999', 2)
+    end
+
+    specify { expect { |b| @page.each_body(&b) }.to yield_successive_args(PixivMachine::IllustsPage::Body, PixivMachine::IllustsPage::Body, PixivMachine::IllustsPage::Body) }
+  end
+
   describe "#has_next?" do
     context "次ページがある場合" do
       before do

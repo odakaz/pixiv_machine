@@ -28,6 +28,14 @@ describe PixivMachine::UserBookmarkPage do
     end
   end
 
+  describe "#each_body" do
+    before do
+      @page = PixivMachine::UserBookmarkPage.new(@mech, 'id', 'password', :show, 2)
+    end
+
+    specify { expect { |b| @page.each_body(&b) }.to yield_successive_args(PixivMachine::UserBookmarkPage::Body, PixivMachine::UserBookmarkPage::Body, PixivMachine::UserBookmarkPage::Body) }
+  end
+
   describe "#users" do
     context "公開ブックマーク" do
       context "ページ指定されたら、指定されたページをgetしてユーザーのリストを作る" do
