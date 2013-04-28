@@ -4,7 +4,6 @@ gem 'redis'
 group :development do
   gem 'rspec'
   gem 'webmock'
-  gem 'guard'
   gem 'guard-rspec'
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
