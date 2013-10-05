@@ -27,12 +27,12 @@ class PixivMachine::IllustsPage < PixivMachine::PageablePage
   end
 
   def check_has_next
-    next_link = page.search("div.pages ol li a.button[rel='next']")
+    next_link = page.search("div.pager-container span.next a._button[rel='next']")
     !next_link.empty?
   end
 
   def check_has_prev
-    prev_link = page.search("div.pages ol li a.button[rel='prev']")
+    prev_link = page.search("div.pager-container span.prev a._button[rel='prev']")
     !prev_link.empty?
   end
 

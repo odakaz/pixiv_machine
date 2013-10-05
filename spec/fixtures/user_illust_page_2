@@ -1,13 +1,21 @@
 <html>
   <body>
-    <div class="pages">
-      <ol>
-        <li><a href="member_illust.php?id=12345&p=1" class="button" rel="prev">« 前へ</a></li>
-        <li><a href="member_illust.php?id=12345&p=1">1</a></li>
-        <li class="pages-current"><span>2</span></li>
-        <li><a href="member_illust.php?id=12345&p=3">3</a></li>
-        <li><a href="member_illust.php?id=12345&p=3" class="button" rel="next">次へ »</a></li>
-      </ol>
+    <div class="pager-container">
+      <span class="prev">
+        <a href="?id=12345" rel="prev" class="_button" title="前へ">
+          <i class="_icon sprites-prev-linked"></i>
+        </a>
+      </span>
+      <ul class="page-list">
+        <li><a href="?id=12345">1</a></li>
+        <li class="current">2</li>
+        <li><a href="?id=12345&p=3">3</a></li>
+      </ul>
+      <span class="next">
+        <a href="?id=12345&p=3" rel="next" class="_button" title="次へ">
+          <i class="_icon sprites-next-linked"></i>
+        </a>
+      </span>
     </div>
 
     <div class="display_works linkStyleWorks">
